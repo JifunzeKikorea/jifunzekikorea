@@ -875,5 +875,202 @@ console.log(
     vocabulary.length,
     "words"
 );
+``````javascript id="v1n8kp"
+/* =========================================
+   VOCABULARY DISPLAY
+========================================= */
+
+const vocabularyList = document.getElementById("vocabulary-list");
+const vocabularySearch = document.getElementById("vocabularySearch");
+const categoryFilter = document.getElementById("categoryFilter");
+const vocabularyCount = document.getElementById("vocabularyCount");
+const vocabularyEmpty = document.getElementById("vocabularyEmpty");
+
+
+function displayVocabulary() {
+
+    if (!vocabularyList) return;
+
+    const searchText =
+        vocabularySearch
+            ? vocabularySearch.value.toLowerCase().trim()
+            : "";
+
+    const selectedCategory =
+        categoryFilter
+            ? categoryFilter.value
+            : "all";
+
+
+    const filteredWords = vocabulary.filter(function (word) {
+
+        const matchesCategory =
+            selectedCategory === "all" ||
+            word.category === selectedCategory;
+
+
+        const matchesSearch =
+            word.korean.toLowerCase().includes(searchText) ||
+            word.romanization.toLowerCase().includes(searchText) ||
+            word.english.toLowerCase().includes(searchText) ||
+            word.swahili.toLowerCase().includes(searchText);
+
+
+        return matchesCategory && matchesSearch;
+
+    });
+
+
+    vocabularyList.innerHTML = "";
+
+
+    /* =========================
+       NO RESULTS
+    ========================= */
+
+    if (filteredWords.length === 0) {
+
+        if (vocabularyEmpty) {
+            vocabularyEmpty.style.display = "block";
+        }
+
+        if (vocabularyCount) {
+            vocabularyCount.textContent = "No words found";
+        }
+
+        return;
+
+    }
+
+
+    if (vocabularyEmpty) {
+        vocabularyEmpty.style.display = "none";
+    }
+
+
+    /* =========================
+       UPDATE COUNT
+    ========================= */
+
+    if (vocabularyCount) {
+
+        vocabularyCount.textContent =
+            `Showing ${filteredWords.length} word${filteredWords.length === 1 ? "" : "s"}`;
+
+    }
+
+
+    /* =========================
+       CREATE WORD CARDS
+    ========================= */
+
+    filteredWords.forEach(function (word) {
+
+        const card = document.createElement("div");
+
+        card.className = "vocabulary-card";
+
+
+        card.innerHTML = `
+
+            <div class="vocabulary-card-top">
+
+                <span class="vocabulary-category">
+                    ${word.category}
+                </span>
+
+                <button
+                    class="vocabulary-speak"
+                    type="button"
+                    data-korean="${word.korean}"
+                    aria-label="Pronounce ${word.korean}"
+                >
+                    🔊
+                </button>
+
+            </div>
+
+
+            <div class="vocabulary-korean">
+                ${word.korean}
+            </div>
+
+
+            <div class="vocabulary-romanization">
+                ${word.romanization}
+            </div>
+
+
+            <div class="vocabulary-meaning">
+
+                <strong>
+                    ${word.english}
+                </strong>
+
+                <span>
+                    ${word.swahili}
+                </span>
+
+            </div>
+
+        `;
+
+
+        vocabularyList.appendChild(card);
+
+
+        /* =========================
+           PRONUNCIATION BUTTON
+        ========================= */
+
+        const speakButton =
+            card.querySelector(".vocabulary-speak");
+
+
+        speakButton.addEventListener("click", function () {
+
+            speak(word.korean);
+
+        });
+
+    });
+
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+if (vocabularySearch) {
+
+    vocabularySearch.addEventListener(
+        "input",
+        displayVocabulary
+    );
+
+}
+
+
+/* =========================================
+   CATEGORY FILTER
+========================================= */
+
+if (categoryFilter) {
+
+    categoryFilter.addEventListener(
+        "change",
+        displayVocabulary
+    );
+
+}
+
+
+/* =========================================
+   INITIAL DISPLAY
+========================================= */
+
+displayVocabulary();
 ```
+
 
