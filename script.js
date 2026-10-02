@@ -1054,7 +1054,21 @@ if (vocabularySearch) {
 
 /* =========================================
    CATEGORY FILTER
+========================================= */if (categoryFilter) {
+
+    categoryFilter.addEventListener(
+        "change",
+        displayVocabulary
+    );
+
+}
+
+
+/* =========================================
+   INITIAL DISPLAY
 ========================================= */
+
+displayVocabulary();
 
 if (categoryFilter) {
 
