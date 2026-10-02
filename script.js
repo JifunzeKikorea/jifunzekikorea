@@ -283,6 +283,7 @@ function startQuiz() {
 
 
 /* =========================================
+/* =========================================
    SHOW QUESTION
 ========================================= */
 
@@ -295,6 +296,7 @@ function showQuestion() {
     quizQuestion.textContent =
         `${currentQuestion + 1}. ${question.question}`;
 
+}
     quizOptions.innerHTML = "";
 
     question.options.forEach(function (option) {
