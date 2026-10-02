@@ -334,99 +334,103 @@
 
 <!-- ================= VOCABULARY ================= -->
 
+```html
 <section class="section section-soft" id="vocabulary">
 
     <div class="section-heading centered">
 
         <span class="section-label">VOCABULARY</span>
 
-        <h2>Learn Words by Category</h2>
+        <h2>Build Your Korean Vocabulary</h2>
 
         <p>
-            Build your Korean vocabulary with words you can use
-            in everyday life.
+            Explore 300 Korean words organized into useful everyday categories.
+            Search, filter, and practice pronunciation as you learn.
         </p>
 
     </div>
 
 
-    <div class="category-grid">
+    <!-- SEARCH -->
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">🎨</span>
-            <strong>Colours</strong>
-            <small>20 words</small>
-        </a>
+    <div class="vocabulary-tools">
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">📅</span>
-            <strong>Days</strong>
-            <small>7 words</small>
-        </a>
+        <input
+            type="text"
+            id="vocabularySearch"
+            placeholder="Search Korean, English or Swahili..."
+            autocomplete="off"
+        >
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">🗓️</span>
-            <strong>Months</strong>
-            <small>12 words</small>
-        </a>
+        <select id="categoryFilter">
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">👨‍👩‍👧</span>
-            <strong>Family</strong>
-            <small>30 words</small>
-        </a>
+            <option value="all">All Categories</option>
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">⏰</span>
-            <strong>Time</strong>
-            <small>25 words</small>
-        </a>
+            <option value="Colours">Colours</option>
+            <option value="Days">Days</option>
+            <option value="Months">Months</option>
+            <option value="Family & People">Family & People</option>
+            <option value="Time & Dates">Time & Dates</option>
+            <option value="House & Household">House & Household</option>
+            <option value="School">School</option>
+            <option value="University">University</option>
+            <option value="Office & Work">Office & Work</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Food">Food</option>
+            <option value="Transport & Places">Transport & Places</option>
+            <option value="Feelings & Common Words">
+                Feelings & Common Words
+            </option>
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">🏠</span>
-            <strong>House</strong>
-            <small>30 words</small>
-        </a>
+        </select>
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">🏫</span>
-            <strong>School</strong>
-            <small>25 words</small>
-        </a>
+    </div>
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">🎓</span>
-            <strong>University</strong>
-            <small>20 words</small>
-        </a>
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">💼</span>
-            <strong>Office & Work</strong>
-            <small>25 words</small>
-        </a>
+    <!-- VOCABULARY COUNT -->
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">🥤</span>
-            <strong>Drinks</strong>
-            <small>15 words</small>
-        </a>
+    <div class="vocabulary-status">
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">🍚</span>
-            <strong>Food</strong>
-            <small>35 words</small>
-        </a>
+        <span id="vocabularyCount">
+            Showing 300 words
+        </span>
 
-        <a href="#vocabulary-list" class="category-card">
-            <span class="category-icon">🚗</span>
-            <strong>Transport</strong>
-            <small>20 words</small>
-        </a>
+    </div>
+
+
+    <!-- VOCABULARY LIST -->
+
+    <div
+        class="vocabulary-list"
+        id="vocabulary-list"
+    >
+
+        <!-- JavaScript will put the 300 words here -->
+
+    </div>
+
+
+    <!-- NO RESULTS -->
+
+    <div
+        class="vocabulary-empty"
+        id="vocabularyEmpty"
+        style="display: none;"
+    >
+
+        <div>🔎</div>
+
+        <h3>No words found</h3>
+
+        <p>
+            Try another Korean, English, or Swahili word.
+        </p>
 
     </div>
 
 </section>
+```
+
 
 
 <!-- ================= WORD OF THE DAY ================= -->
