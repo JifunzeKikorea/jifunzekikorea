@@ -1,4 +1,4 @@
-```javascript
+</>JavaScript
 /* =========================================
    JIFUNZEKIKOREA
    MAIN JAVASCRIPT
@@ -1083,6 +1083,6 @@ if (categoryFilter) {
 ========================================= */
 
 displayVocabulary();
-```
+
 
 
