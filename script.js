@@ -280,10 +280,10 @@ function startQuiz() {
 
     showQuestion();
 }
-
-
-/* =========================================
-/* =========================================
+ 
+  
+  
+ /* =========================================
    SHOW QUESTION
 ========================================= */
 
@@ -296,7 +296,6 @@ function showQuestion() {
     quizQuestion.textContent =
         `${currentQuestion + 1}. ${question.question}`;
 
-}
     quizOptions.innerHTML = "";
 
     question.options.forEach(function (option) {
@@ -307,9 +306,7 @@ function showQuestion() {
         button.className = "quiz-option";
 
         button.addEventListener("click", function () {
-
             checkAnswer(option, button);
-
         });
 
         quizOptions.appendChild(button);
@@ -320,7 +317,6 @@ function showQuestion() {
         quizNext.style.display = "none";
     }
 }
-
 
 /* =========================================
    CHECK ANSWER
@@ -481,7 +477,7 @@ document.querySelectorAll(".speak-btn").forEach(function (button) {
 console.log(
     "JifunzeKikorea is ready 🇰🇷"
 );
-``````javascript
+
 /* =========================================
    300 KOREAN VOCABULARY DATABASE
 ========================================= */
@@ -877,7 +873,7 @@ console.log(
     vocabulary.length,
     "words"
 );
-``````javascript id="v1n8kp"
+
 /* =========================================
    VOCABULARY DISPLAY
 ========================================= */
