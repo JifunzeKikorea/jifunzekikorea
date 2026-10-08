@@ -2170,3 +2170,139 @@ button:hover,
         top: 40px;
     }
 }
+/* =========================================
+   VOCABULARY CATEGORY GRID
+   ========================================= */
+
+#vocabulary-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    align-items: start;
+}
+
+/* Each category becomes one card */
+.vocabulary-category-card {
+    background: white;
+    border-radius: 22px;
+    padding: 22px;
+    box-shadow: 0 8px 25px rgba(16, 27, 92, 0.10);
+    border-top: 7px solid var(--card-color, #f71968);
+    overflow: hidden;
+}
+
+/* Category heading */
+.vocabulary-category-card h3 {
+    margin: 0 0 18px;
+    color: var(--card-color, #101b5c);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+/* Words inside the category */
+.vocabulary-category-card .vocabulary-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    background: #f8f9ff;
+    border: none;
+    border-radius: 12px;
+    padding: 11px 14px;
+    margin-bottom: 8px;
+
+    box-shadow: none;
+    min-height: auto;
+}
+
+/* Korean word */
+.vocabulary-category-card .vocabulary-korean {
+    font-size: 20px;
+    font-weight: 800;
+    color: #101b5c;
+}
+
+/* Romanization */
+.vocabulary-category-card .vocabulary-romanization {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Meaning */
+.vocabulary-category-card .vocabulary-meaning {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Listen button */
+.vocabulary-category-card .vocabulary-speak {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background: var(--card-color, #f71968);
+    color: white;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Different colours for category cards */
+.vocabulary-category-card:nth-child(4n + 1) {
+    --card-color: #f71968;
+}
+
+.vocabulary-category-card:nth-child(4n + 2) {
+    --card-color: #7c3aed;
+}
+
+.vocabulary-category-card:nth-child(4n + 3) {
+    --card-color: #10b981;
+}
+
+.vocabulary-category-card:nth-child(4n + 4) {
+    --card-color: #f59e0b;
+}
+
+/* Hover effect */
+.vocabulary-category-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vocabulary-category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(16, 27, 92, 0.16);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 800px) {
+    #vocabulary-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   PHONE
+   ========================================= */
+
+@media (max-width: 500px) {
+    .vocabulary-category-card {
+        padding: 17px;
+        border-radius: 18px;
+    }
+
+    .vocabulary-category-card h3 {
+        font-size: 19px;
+    }
+
+    .vocabulary-category-card .vocabulary-korean {
+        font-size: 18px;
+    }
+}
