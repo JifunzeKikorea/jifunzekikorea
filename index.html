@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JifunzeKikorea | Learn Korean</title>
+
+    <meta name="description"
+          content="JifunzeKikorea is a Korean learning platform for vocabulary, Hangul, grammar, sentences and quizzes.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            <span class="logo-mark">한</span>
+            <span>
+                <strong>Jifunze</strong>Kikorea
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#learn">Learn</a>
+            </li>
+
+            <li>
+                <a href="#vocabulary">Vocabulary</a>
+            </li>
+
+            <li>
+                <a href="#grammar">Grammar</a>
+            </li>
+
+            <li>
+                <a href="#quiz">Quizzes</a>
+            </li>
+
+            <li>
+                <a href="#culture">Culture</a>
+            </li>
+
+        </ul>
+
+        <a href="#learn" class="nav-button">
+            Start Learning
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                🇰🇷 YOUR KOREAN LEARNING JOURNEY
+            </div>
+
+            <h1>
+                Learn Korean.
+                <span>One Step at a Time.</span>
+            </h1>
+
+            <p class="hero-text">
+                Learn Hangul, build your vocabulary, understand Korean grammar
+                and practice everyday sentences — all in one place.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#learn" class="primary-button">
+                    Start Learning
+                    <span>→</span>
+                </a>
+
+                <a href="#quiz" class="secondary-button">
+                    Take a Quiz
+                </a>
+
+            </div>
+
+            <div class="hero-trust">
+
+                <div>
+                    <strong>300+</strong>
+                    <span>Words</span>
+                </div>
+
+                <div>
+                    <strong>10+</strong>
+                    <span>Topics</span>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Free</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO KOREAN CARD -->
+
+        <div class="hero-card-wrapper">
+
+            <div class="hero-card">
+
+                <div class="card-top">
+
+                    <span>오늘의 한국어</span>
+
+                    <span class="card-dot"></span>
+
+                </div>
+
+                <div class="korean-word">
+                    안녕하세요
+                </div>
+
+                <div class="romanization">
+                    Annyeonghaseyo
+                </div>
+
+                <div class="meaning">
+                    Hello
+                </div>
+
+                <div class="meaning-swahili">
+                    Habari
+                </div>
+
+                <button
+                    class="listen-button"
+                    onclick="speak('안녕하세요')">
+
+                    🔊 Listen
+
+                </button>
+
+            </div>
+
+            <div class="floating-card floating-card-one">
+                <span>🇰🇷</span>
+                <div>
+                    <strong>한국어</strong>
+                    <small>Korean</small>
+                </div>
+            </div>
+
+            <div class="floating-card floating-card-two">
+                <span>✓</span>
+                <div>
+                    <strong>Keep learning</strong>
+                    <small>Every day</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats-section">
+
+    <div class="stats-container">
+
+        <div class="stat">
+            <span class="stat-number">300+</span>
+            <span class="stat-label">Vocabulary Words</span>
+        </div>
+
+        <div class="stat">
+            <span class="stat-number">14</span>
+            <span class="stat-label">Learning Categories</span>
+        </div>
+
+        <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Grammar Lessons</span>
+        </div>
+
+        <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Practice Questions</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LEARN ================= -->
+
+<section class="section" id="learn">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-label">START HERE</span>
+
+            <h2>Your Korean Journey</h2>
+
+            <p>
+                Follow a simple path from the Korean alphabet to
+                real Korean sentences.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="learning-grid">
+
+        <article class="learning-card featured-learning">
+
+            <div class="learning-icon">
+                한
+            </div>
+
+            <div>
+
+                <span class="card-label">LESSON 01</span>
+
+                <h3>Learn Hangul</h3>
+
+                <p>
+                    Start with the Korean alphabet and learn how
+                    Korean letters are formed and pronounced.
+                </p>
+
+                <a href="#hangul">
+                    Learn Hangul →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="learning-card">
+
+            <div class="learning-icon blue">
+                A
+            </div>
+
+            <div>
+
+                <span class="card-label">LESSON 02</span>
+
+                <h3>Build Vocabulary</h3>
+
+                <p>
+                    Learn useful Korean words organized into
+                    everyday categories.
+                </p>
+
+                <a href="#vocabulary">
+                    Explore Words →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="learning-card">
+
+            <div class="learning-icon gold">
+                문
+            </div>
+
+            <div>
+
+                <span class="card-label">LESSON 03</span>
+
+                <h3>Understand Grammar</h3>
+
+                <p>
+                    Learn Korean particles and sentence structures
+                    with simple examples.
+                </p>
+
+                <a href="#grammar">
+                    Learn Grammar →
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= VOCABULARY ================= -->
+
+<section class="section section-soft" id="vocabulary">
+
+    <div class="section-heading centered">
+        <span class="section-label">VOCABULARY</span>
+        <h2>Build Your Korean Vocabulary</h2>
+        <p>Choose a category and learn the words visually, one topic at a time.</p>
+    </div>
+
+    <div class="vocabulary-tools">
+        <input
+            type="text"
+            id="vocabularySearch"
+            placeholder="Search inside the selected category..."
+            autocomplete="off"
+        >
+        <select id="categoryFilter" style="display:none;">
+            <option value="all">All Categories</option>
+            <option value="Colours">Colours</option>
+            <option value="Days">Days</option>
+            <option value="Months">Months</option>
+            <option value="Family & People">Family & People</option>
+            <option value="Time & Dates">Time & Dates</option>
+            <option value="House & Household">House & Household</option>
+            <option value="School">School</option>
+            <option value="University">University</option>
+            <option value="Office & Work">Office & Work</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Food">Food</option>
+            <option value="Transport & Places">Transport & Places</option>
+            <option value="Feelings & Common Words">Feelings & Common Words</option>
+        </select>
+    </div>
+
+    <div class="vocabulary-status">
+        <span id="vocabularyCount">Choose a category to start learning</span>
+    </div>
+
+    <div class="vocabulary-list" id="vocabulary-list"></div>
+
+    <div class="vocabulary-empty" id="vocabularyEmpty" style="display:none;">
+        <div>🔎</div>
+        <h3>No words found</h3>
+        <p>Try another word.</p>
+    </div>
+
+</section>
+
+
+<!-- ================= WORD OF THE DAY ================= -->
+
+<section class="word-section">
+
+    <div class="word-card">
+
+        <div class="word-left">
+
+            <span class="section-label">
+                WORD OF THE DAY
+            </span>
+
+            <h2>물</h2>
+
+            <p class="word-romanization">
+                mul
+            </p>
+
+            <p class="word-english">
+                Water
+            </p>
+
+            <p class="word-swahili">
+                Maji
+            </p>
+
+        </div>
+
+        <div class="word-right">
+
+            <button
+                class="large-listen"
+                onclick="speak('물')">
+
+                🔊
+
+            </button>
+
+            <span>
+                Listen to pronunciation
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HANGUL ================= -->
+
+<section class="section" id="hangul">
+
+    <div class="section-heading centered">
+
+        <span class="section-label">KOREAN ALPHABET</span>
+
+        <h2>Meet Hangul</h2>
+
+        <p>
+            Hangul is the writing system used for the Korean language.
+            Start by learning the basic Korean letters.
+        </p>
+
+    </div>
+
+
+    <div class="hangul-preview">
+
+        <div class="hangul-item">
+            <strong>ㄱ</strong>
+            <span>g/k</span>
+        </div>
+
+        <div class="hangul-item">
+            <strong>ㄴ</strong>
+            <span>n</span>
+        </div>
+
+        <div class="hangul-item">
+            <strong>ㄷ</strong>
+            <span>d/t</span>
+        </div>
+
+        <div class="hangul-item">
+            <strong>ㄹ</strong>
+            <span>r/l</span>
+        </div>
+
+        <div class="hangul-item">
+            <strong>ㅁ</strong>
+            <span>m</span>
+        </div>
+
+        <div class="hangul-item">
+            <strong>ㅂ</strong>
+            <span>b/p</span>
+        </div>
+
+        <div class="hangul-item">
+            <strong>ㅅ</strong>
+            <span>s</span>
+        </div>
+
+        <div class="hangul-item">
+            <strong>ㅇ</strong>
+            <span>ng</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GRAMMAR ================= -->
+
+<section class="section section-soft" id="grammar">
+
+    <div class="section-heading centered">
+
+        <span class="section-label">GRAMMAR</span>
+
+        <h2>Build Korean Sentences</h2>
+
+        <p>
+            Korean sentence structure becomes easier when you understand
+            the particles and patterns.
+        </p>
+
+    </div>
+
+
+    <div class="grammar-grid">
+
+        <article class="grammar-card">
+
+            <span class="grammar-particle">은 / 는</span>
+
+            <h3>Topic Particle</h3>
+
+            <p>
+                Used to introduce or emphasize the topic of a sentence.
+            </p>
+
+            <div class="grammar-example">
+                저는 학생이에요.
+            </div>
+
+            <small>
+                I am a student.
+            </small>
+
+        </article>
+
+
+        <article class="grammar-card">
+
+            <span class="grammar-particle">이 / 가</span>
+
+            <h3>Subject Particle</h3>
+
+            <p>
+                Marks the subject of a Korean sentence.
+            </p>
+
+            <div class="grammar-example">
+                친구가 와요.
+            </div>
+
+            <small>
+                A friend is coming.
+            </small>
+
+        </article>
+
+
+        <article class="grammar-card">
+
+            <span class="grammar-particle">을 / 를</span>
+
+            <h3>Object Particle</h3>
+
+            <p>
+                Marks the object receiving the action.
+            </p>
+
+            <div class="grammar-example">
+                밥을 먹어요.
+            </div>
+
+            <small>
+                I eat rice.
+            </small>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SENTENCES ================= -->
+
+<section class="section" id="sentences">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-label">PRACTICE</span>
+
+            <h2>Useful Korean Sentences</h2>
+
+            <p>
+                Learn complete sentences instead of memorizing
+                words alone.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="sentence-grid">
+
+        <article class="sentence-card">
+
+            <span class="sentence-number">01</span>
+
+            <h3>저는 학생이에요.</h3>
+
+            <p>Jeoneun haksaeng-ieyo.</p>
+
+            <div>
+                I am a student.
+            </div>
+
+            <small>
+                Mimi ni mwanafunzi.
+            </small>
+
+            <button onclick="speak('저는 학생이에요.')">
+                🔊
+            </button>
+
+        </article>
+
+
+        <article class="sentence-card">
+
+            <span class="sentence-number">02</span>
+
+            <h3>물을 마셔요.</h3>
+
+            <p>Mureul masyeoyo.</p>
+
+            <div>
+                I drink water.
+            </div>
+
+            <small>
+                Ninakunywa maji.
+            </small>
+
+            <button onclick="speak('물을 마셔요.')">
+                🔊
+            </button>
+
+        </article>
+
+
+        <article class="sentence-card">
+
+            <span class="sentence-number">03</span>
+
+            <h3>학교에 가요.</h3>
+
+            <p>Hakgyoe gayo.</p>
+
+            <div>
+                I go to school.
+            </div>
+
+            <small>
+                Ninaenda shule.
+            </small>
+
+            <button onclick="speak('학교에 가요.')">
+                🔊
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUIZ ================= -->
+
+<section class="quiz-section" id="quiz">
+
+    <div class="quiz-intro">
+
+        <span class="section-label">PRACTICE YOUR SKILLS</span>
+
+        <h2>How Much Korean Do You Know?</h2>
+
+        <p>
+            Test your vocabulary and see how much you've learned.
+        </p>
+
+        <button class="primary-button" onclick="startQuiz()">
+            Start Quiz →
+        </button>
+
+    </div>
+
+
+    <div class="quiz-box" id="quizBox">
+
+        <div class="quiz-top">
+
+            <span id="quizProgress">
+                Question 1
+            </span>
+
+            <span id="quizScore">
+                Score: 0
+            </span>
+
+        </div>
+
+        <h3 id="quizQuestion">
+            What does 물 mean?
+        </h3>
+
+        <div id="quizOptions" class="quiz-options">
+
+            <button class="quiz-option">Water</button>
+
+            <button class="quiz-option">Food</button>
+
+            <button class="quiz-option">School</button>
+
+            <button class="quiz-option">Friend</button>
+
+        </div>
+
+        <div id="quizResult"></div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CULTURE ================= -->
+
+<section class="section" id="culture">
+
+    <div class="culture-layout">
+
+        <div class="culture-text">
+
+            <span class="section-label">KOREAN CULTURE</span>
+
+            <h2>More Than Just a Language</h2>
+
+            <p>
+                Learning Korean also means discovering Korean culture,
+                traditions, food, music and everyday life.
+            </p>
+
+            <p>
+                Explore the culture while building your language skills.
+            </p>
+
+            <a href="#home" class="text-link">
+                Explore Korean culture →
+            </a>
+
+        </div>
+
+
+        <div class="culture-card">
+
+            <div class="culture-symbol">
+                한국
+            </div>
+
+            <h3>Korea</h3>
+
+            <p>
+                Learn the language. Understand the culture.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="about-content">
+
+        <span class="section-label">ABOUT JIFUNZEKIKOREA</span>
+
+        <h2>Make Korean Easier to Learn</h2>
+
+        <p>
+            JifunzeKikorea is designed to help learners study Korean
+            vocabulary, Hangul, grammar and everyday sentences
+            through simple and interactive lessons.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                <span class="logo-mark">한</span>
+                JifunzeKikorea
+            </div>
+
+            <p>
+                Learn Korean. One step at a time.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#vocabulary">Vocabulary</a>
+
+            <a href="#grammar">Grammar</a>
+
+            <a href="#quiz">Quizzes</a>
+
+            <a href="#culture">Culture</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 JifunzeKikorea. Learn Korean with confidence.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
