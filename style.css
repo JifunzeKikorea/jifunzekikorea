@@ -2029,145 +2029,201 @@ button:hover,
     color: white;
 }
 /* =====================================================
-   HERO PICTURES
-   ===================================================== */
+   HERO PICTURES — FINAL
+===================================================== */
 
 .hero-card-wrapper {
     position: relative;
     min-height: 560px;
+    width: 100%;
 }
 
 
-/* YOUR PHOTO */
+/* ===============================
+   YOUR PHOTO
+================================ */
 
 .hero-photo {
     position: absolute;
-    right: 0;
-    bottom: 10px;
 
-    width: 230px;
+    width: 300px;
+    height: 420px;
 
-    z-index: 5;
+    right: 20px;
+    top: 55px;
 
-    border-radius: 25px;
+    border-radius: 28px;
     overflow: hidden;
 
+    border: 7px solid white;
+
     box-shadow:
-        0 20px 45px rgba(16, 27, 92, 0.25);
+        0 25px 55px rgba(16, 27, 92, 0.25);
 
-    border: 6px solid white;
+    transform: rotate(4deg);
 
-    transform: rotate(3deg);
-
-    transition: 0.4s ease;
-}
-
-.hero-photo:hover {
-    transform: rotate(0deg) scale(1.03);
+    z-index: 5;
 }
 
 .hero-photo img {
     width: 100%;
-    height: auto;
+    height: 100%;
+
     display: block;
+
+    object-fit: cover;
 }
 
 
-/* KOREAN LEARNING IMAGE */
+/* ===============================
+   KOREAN LEARNING IMAGE
+================================ */
 
 .hero-learning-image {
     position: absolute;
 
-    left: 0;
+    width: 220px;
+    height: 220px;
+
+    left: 5px;
     top: 20px;
 
-    width: 210px;
-    height: 210px;
-
     border-radius: 50%;
-
     overflow: hidden;
 
     border: 8px solid white;
 
     box-shadow:
-        0 15px 40px rgba(124, 58, 237, 0.20);
+        0 18px 45px rgba(124, 58, 237, 0.25);
 
-    z-index: 1;
+    z-index: 6;
 }
 
 .hero-learning-image img {
     width: 100%;
     height: 100%;
 
+    display: block;
+
     object-fit: cover;
 }
 
 
-/* MOVE THE KOREAN CARD */
+/* ===============================
+   KOREAN CARD
+================================ */
 
 .hero-card-wrapper .hero-card {
     position: absolute;
+
+    width: 250px;
 
     left: 50%;
     top: 150px;
 
     transform: translateX(-50%);
 
-    z-index: 4;
-
-    width: 260px;
+    z-index: 7;
 }
 
 
-/* FLOATING CARDS */
+/* ===============================
+   FLOATING CARDS
+================================ */
 
 .hero-card-wrapper .floating-card-one {
-    left: 10px;
-    bottom: 80px;
-    z-index: 7;
+    left: 0;
+    bottom: 90px;
+    z-index: 10;
 }
 
 .hero-card-wrapper .floating-card-two {
-    right: 5px;
+    right: 0;
     top: 80px;
-    z-index: 7;
+    z-index: 10;
 }
 
 
-/* MOBILE */
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 950px) {
+
+    .hero-card-wrapper {
+        min-height: 560px;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .hero-photo {
+        right: 20px;
+    }
+
+    .hero-learning-image {
+        left: 20px;
+    }
+}
+
 
 @media (max-width: 700px) {
 
     .hero-card-wrapper {
-        min-height: 520px;
+        min-height: 530px;
     }
 
     .hero-photo {
-        width: 170px;
+        width: 220px;
+        height: 320px;
+
         right: 5px;
-        bottom: 20px;
+        top: 80px;
     }
 
     .hero-learning-image {
-        width: 150px;
-        height: 150px;
-        left: 5px;
+        width: 160px;
+        height: 160px;
+
+        left: 0;
+        top: 25px;
     }
 
     .hero-card-wrapper .hero-card {
-        width: 220px;
-        top: 130px;
+        width: 210px;
+        top: 160px;
     }
 
     .hero-card-wrapper .floating-card-one {
         left: 0;
-        bottom: 40px;
+        bottom: 30px;
     }
 
     .hero-card-wrapper .floating-card-two {
         right: 0;
         top: 40px;
+    }
+}
+
+
+@media (max-width: 430px) {
+
+    .hero-photo {
+        width: 190px;
+        height: 280px;
+
+        right: 0;
+    }
+
+    .hero-learning-image {
+        width: 130px;
+        height: 130px;
+
+        left: 0;
+    }
+
+    .hero-card-wrapper .hero-card {
+        width: 190px;
+        top: 155px;
     }
 }
 /* =========================================
