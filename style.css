@@ -1,4 +1,4 @@
-```css
+css
 /* =========================================
    JIFUNZEKIKOREA — PREMIUM DESIGN
 ========================================= */
@@ -1592,4 +1592,439 @@ footer {
         transform: scale(0.85);
     }
 }
-```
+/* =========================================================
+   JIFUNZE KIKOREA — COLOR UPGRADE
+   ========================================================= */
+
+/* ---------- MAIN COLOUR PALETTE ---------- */
+
+:root {
+    --jk-navy: #101b5c;
+    --jk-blue: #2563eb;
+    --jk-sky: #eaf4ff;
+    --jk-pink: #f71968;
+    --jk-pink-light: #fff0f7;
+    --jk-purple: #7c3aed;
+    --jk-purple-light: #f3eaff;
+    --jk-yellow: #fbbf24;
+    --jk-green: #10b981;
+    --jk-red: #ef233c;
+    --jk-white: #ffffff;
+    --jk-dark: #172554;
+    --jk-text: #26315f;
+}
+
+
+/* ---------- BODY ---------- */
+
+body {
+    background: #ffffff;
+    color: var(--jk-text);
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.97) !important;
+    border-bottom: 1px solid #eee !important;
+    box-shadow: 0 4px 20px rgba(16, 27, 92, 0.08) !important;
+}
+
+.nav-links a {
+    color: var(--jk-navy) !important;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--jk-pink) !important;
+    background: var(--jk-pink-light);
+    border-radius: 20px;
+}
+
+
+/* ---------- START LEARNING BUTTON ---------- */
+
+.nav-cta,
+.btn-primary,
+.hero .btn-primary {
+    background: linear-gradient(
+        135deg,
+        #f71968,
+        #ec145f,
+        #c026d3
+    ) !important;
+
+    color: white !important;
+    border: none !important;
+    box-shadow: 0 8px 20px rgba(247, 25, 104, 0.25);
+}
+
+.nav-cta:hover,
+.btn-primary:hover,
+.hero .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(247, 25, 104, 0.35);
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(247, 25, 104, 0.25),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(124, 58, 237, 0.25),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #eef5ff 0%,
+            #ffffff 45%,
+            #fff0f7 100%
+        ) !important;
+}
+
+
+/* Hero heading */
+
+.hero h1 {
+    color: var(--jk-navy) !important;
+}
+
+.hero h1 span {
+    color: var(--jk-pink) !important;
+}
+
+
+/* Hero paragraph */
+
+.hero p {
+    color: #47527a !important;
+}
+
+
+/* ---------- HERO CARD ---------- */
+
+.hero-card {
+    background:
+        linear-gradient(
+            145deg,
+            #101b5c,
+            #182d75,
+            #5727a8
+        ) !important;
+
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow:
+        0 20px 50px rgba(16, 27, 92, 0.25),
+        0 0 0 8px rgba(247, 25, 104, 0.04);
+}
+
+
+/* ---------- STATS ---------- */
+
+.stats {
+    background: white !important;
+    box-shadow: 0 8px 30px rgba(16, 27, 92, 0.06);
+}
+
+.stat-number {
+    background: linear-gradient(
+        135deg,
+        #f71968,
+        #7c3aed
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* ---------- SECTION HEADINGS ---------- */
+
+.section-title {
+    color: var(--jk-navy) !important;
+}
+
+.section-subtitle {
+    color: #64709a !important;
+}
+
+
+/* ---------- LEARNING CARDS ---------- */
+
+.learning-card,
+.learn-card {
+    background: white !important;
+    border: 1px solid #edf0fa !important;
+    box-shadow: 0 10px 30px rgba(16, 27, 92, 0.08) !important;
+    transition: all 0.3s ease;
+}
+
+.learning-card:hover,
+.learn-card:hover {
+    transform: translateY(-8px);
+    border-color: #f8b4d0 !important;
+    box-shadow:
+        0 18px 40px rgba(247, 25, 104, 0.13) !important;
+}
+
+
+/* ---------- CARD ICONS ---------- */
+
+.category-icon,
+.card-icon {
+    background: linear-gradient(
+        135deg,
+        #eaf4ff,
+        #f3eaff
+    ) !important;
+
+    color: var(--jk-purple) !important;
+}
+
+
+/* ---------- VOCABULARY SECTION ---------- */
+
+#vocabulary {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8faff 100%
+        ) !important;
+}
+
+
+/* ---------- VOCABULARY CARDS ---------- */
+
+.vocabulary-card {
+    background: white !important;
+    border: 1px solid #e8eafa !important;
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 8px 25px rgba(16, 27, 92, 0.07) !important;
+
+    transition: all 0.3s ease;
+}
+
+.vocabulary-card:hover {
+    transform: translateY(-6px);
+    border-color: #f6a6c7 !important;
+
+    box-shadow:
+        0 15px 35px rgba(247, 25, 104, 0.13) !important;
+}
+
+.vocabulary-korean {
+    color: var(--jk-navy) !important;
+}
+
+.vocabulary-romanization {
+    color: var(--jk-purple) !important;
+}
+
+.vocabulary-meaning {
+    color: var(--jk-pink) !important;
+}
+
+.vocabulary-category {
+    background: var(--jk-pink-light) !important;
+    color: var(--jk-pink) !important;
+}
+
+
+/* ---------- SPEAK BUTTON ---------- */
+
+.vocabulary-speak {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    ) !important;
+
+    color: white !important;
+}
+
+.vocabulary-speak:hover {
+    transform: scale(1.05);
+}
+
+
+/* ---------- WORD OF THE DAY ---------- */
+
+.word-of-day {
+    background:
+        linear-gradient(
+            135deg,
+            #101b5c,
+            #35207e,
+            #7c3aed
+        ) !important;
+
+    color: white !important;
+    box-shadow: 0 15px 40px rgba(16, 27, 92, 0.20);
+}
+
+
+/* ---------- HANGUL ---------- */
+
+.hangul-section {
+    background:
+        linear-gradient(
+            135deg,
+            #eef6ff,
+            #fff0f7
+        ) !important;
+}
+
+.hangul-card {
+    background: white !important;
+    border: 1px solid #e5e9fa !important;
+    box-shadow: 0 8px 25px rgba(16, 27, 92, 0.08);
+}
+
+.hangul-card:hover {
+    background: linear-gradient(
+        135deg,
+        #fff0f7,
+        #f3eaff
+    ) !important;
+
+    transform: translateY(-5px);
+}
+
+
+/* ---------- GRAMMAR ---------- */
+
+.grammar-card {
+    background: white !important;
+    border-left: 5px solid var(--jk-pink) !important;
+    box-shadow: 0 8px 25px rgba(16, 27, 92, 0.08) !important;
+}
+
+.grammar-card:hover {
+    border-left-color: var(--jk-purple) !important;
+    transform: translateY(-5px);
+}
+
+
+/* ---------- SENTENCES ---------- */
+
+.sentence-card {
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f8f4ff
+        ) !important;
+
+    border: 1px solid #ebe6f7 !important;
+    box-shadow: 0 8px 25px rgba(16, 27, 92, 0.07);
+}
+
+
+/* ---------- QUIZ ---------- */
+
+.quiz-section {
+    background:
+        linear-gradient(
+            135deg,
+            #101b5c,
+            #252d7d,
+            #7027a8
+        ) !important;
+
+    color: white !important;
+}
+
+.quiz-card {
+    background: white !important;
+    color: var(--jk-navy) !important;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+.quiz-option:hover {
+    background: var(--jk-pink-light) !important;
+    border-color: var(--jk-pink) !important;
+}
+
+
+/* ---------- CULTURE ---------- */
+
+.culture-section {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #fff4f8
+        ) !important;
+}
+
+.culture-card {
+    background: white !important;
+    box-shadow: 0 10px 30px rgba(16, 27, 92, 0.08);
+    border: 1px solid #f1e5ec !important;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about-section {
+    background:
+        linear-gradient(
+            135deg,
+            #eef5ff,
+            #ffffff,
+            #fff0f7
+        ) !important;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background:
+        linear-gradient(
+            135deg,
+            #0b1240,
+            #101b5c,
+            #35156d
+        ) !important;
+
+    color: white !important;
+}
+
+footer a:hover {
+    color: #ff4f91 !important;
+}
+
+
+/* ---------- GENERAL BUTTON EFFECT ---------- */
+
+button,
+.btn,
+a[class*="btn"] {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ---------- COLOURFUL SELECTION ---------- */
+
+::selection {
+    background: #f71968;
+    color: white;
+}
