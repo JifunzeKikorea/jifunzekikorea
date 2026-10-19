@@ -286,7 +286,7 @@ a {
 
 .primary-button {
     background: var(--navy);
-    color: white;
+    color: black;
     border: 1px solid var(--navy);
 }
 
