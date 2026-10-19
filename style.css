@@ -1106,7 +1106,7 @@ a {
     display: flex;
     justify-content: space-between;
 
-    color: var(--muted);
+    color: black;
 
     font-size: 12px;
     font-weight: 600;
